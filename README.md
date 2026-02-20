@@ -1,6 +1,6 @@
 # gabrielgerbi.com.br
 
-Portfólio pessoal — Full Stack Developer
+Meu portfólio — Full Stack Developer
 
 ## Stack
 
