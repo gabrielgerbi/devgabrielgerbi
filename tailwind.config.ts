@@ -8,24 +8,24 @@ const config: Config = {
     extend: {
       colors: {
         bg: {
-          primary: '#0a0a0b',
-          secondary: '#111113',
-          card: '#161618',
-          'card-hover': '#1c1c1f',
+          primary: '#050505',
+          secondary: '#0a0a0a',
+          card: '#111111',
+          'card-hover': '#181818',
         },
         border: {
-          DEFAULT: '#222225',
-          hover: '#333338',
+          DEFAULT: '#1a1a1a',
+          hover: '#2a2a2a',
         },
         text: {
-          primary: '#f0f0f2',
-          secondary: '#8a8a96',
-          muted: '#55555f',
+          primary: '#e8e8e8',
+          secondary: '#888888',
+          muted: '#505050',
         },
         accent: {
-          green: '#4ade80',
-          'green-dim': '#22c55e',
-          blue: '#60a5fa',
+          green: '#22c55e',
+          'green-light': '#4ade80',
+          'green-dim': '#16a34a',
         },
       },
       fontFamily: {
