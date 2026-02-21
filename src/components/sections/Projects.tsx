@@ -18,6 +18,55 @@ const projectTags = [
   ['HTML/CSS', 'JavaScript', 'Design'],
 ]
 
+const projectUrls: string[] = [
+  'https://app.discovery.com.br',
+  'https://discovery.com.br',
+  '',
+  'https://circuitopaixaodecristo.com.br',
+]
+
+function ProjectCard({ title, desc, iconIdx, tagsIdx, url }: {
+  title: string
+  desc: string
+  iconIdx: number
+  tagsIdx: number
+  url: string
+}) {
+  const hasLink = url.length > 0
+
+  const inner = (
+    <div className="group bg-bg-card/50 border border-accent-green/[0.06] rounded-2xl p-8 transition-all hover:border-accent-green/15 hover:bg-bg-card-hover/60 hover:-translate-y-1 backdrop-blur-sm flex flex-col h-full">
+      <div className="flex justify-between items-start mb-4">
+        <div className="w-11 h-11 rounded-xl bg-accent-green/[0.08] flex items-center justify-center">
+          {projectIcons[iconIdx]}
+        </div>
+        {hasLink ? (
+          <svg className="text-text-muted group-hover:text-accent-green group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        ) : (
+          <span className="font-mono text-[10px] text-text-muted px-2 py-0.5 border border-white/[0.06] rounded-full">em breve</span>
+        )}
+      </div>
+      <h3 className="font-display text-xl font-semibold tracking-[-0.01em] mb-2">{title}</h3>
+      <p className="text-text-secondary text-sm leading-relaxed mb-5 flex-1">{desc}</p>
+      <div className="flex flex-wrap gap-1.5">
+        {projectTags[tagsIdx].map((tag) => (
+          <span key={tag} className="font-mono text-[11px] text-text-muted px-2.5 py-1 bg-accent-green/[0.04] rounded-md">{tag}</span>
+        ))}
+      </div>
+    </div>
+  )
+
+  if (hasLink) {
+    return (
+      <a href={url} target="_blank" rel="noopener noreferrer" className="no-underline block h-full">
+        {inner}
+      </a>
+    )
+  }
+
+  return inner
+}
+
 export function Projects() {
   const { t } = useI18n()
 
@@ -45,7 +94,7 @@ export function Projects() {
       <div className="container max-w-[1200px] mx-auto px-6 relative z-[1]">
         <SectionLabel>{t('projects.label')}</SectionLabel>
         <Reveal>
-          <h2 className="font-display text-[clamp(32px,4vw,48px)] font-bold tracking-[-0.03em] leading-[1.1] mb-5">
+          <h2 className="font-display text-[clamp(32px,4vw,48px)] font-extrabold tracking-[-0.03em] leading-[1.1] mb-5">
             {t('projects.title1')}<br />{t('projects.title2')}
           </h2>
         </Reveal>
@@ -54,21 +103,13 @@ export function Projects() {
         <div className="grid md:grid-cols-2 gap-5">
           {projects.map((p, i) => (
             <Reveal key={i}>
-              <div className="group bg-bg-card/50 border border-accent-green/[0.06] rounded-2xl p-8 transition-all hover:border-accent-green/15 hover:bg-bg-card-hover/60 hover:-translate-y-1 backdrop-blur-sm flex flex-col h-full">
-                <div className="flex justify-between items-start mb-4">
-                  <div className="w-11 h-11 rounded-xl bg-accent-green/[0.08] flex items-center justify-center">
-                    {projectIcons[p.icon]}
-                  </div>
-                  <svg className="text-text-muted group-hover:text-accent-green group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-                </div>
-                <h3 className="font-display text-xl font-semibold tracking-[-0.01em] mb-2">{p.title}</h3>
-                <p className="text-text-secondary text-sm leading-relaxed mb-5 flex-1">{p.desc}</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {projectTags[p.tags].map((tag) => (
-                    <span key={tag} className="font-mono text-[11px] text-text-muted px-2.5 py-1 bg-accent-green/[0.04] rounded-md">{tag}</span>
-                  ))}
-                </div>
-              </div>
+              <ProjectCard
+                title={p.title}
+                desc={p.desc}
+                iconIdx={p.icon}
+                tagsIdx={p.tags}
+                url={projectUrls[i]}
+              />
             </Reveal>
           ))}
         </div>

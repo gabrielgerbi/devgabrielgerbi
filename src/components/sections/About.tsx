@@ -80,7 +80,7 @@ export function About() {
           <div>
             <SectionLabel>{t('about.label')}</SectionLabel>
             <Reveal>
-              <h2 className="font-display text-[clamp(32px,4vw,48px)] font-bold tracking-[-0.03em] leading-[1.1] mb-5">
+              <h2 className="font-display text-[clamp(32px,4vw,48px)] font-extrabold tracking-[-0.03em] leading-[1.1] mb-5">
                 {t('about.title1')}<br />{t('about.title2')}
               </h2>
             </Reveal>

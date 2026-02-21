@@ -103,12 +103,12 @@ export function Nav() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden flex flex-col gap-[5px] cursor-pointer bg-transparent border-0 p-1"
+          className="md:hidden w-8 h-8 flex flex-col items-center justify-center gap-[6px] cursor-pointer bg-transparent border-0"
           aria-label="Menu"
         >
-          <span className={`block w-5 h-[2px] bg-text-primary transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
-          <span className={`block w-5 h-[2px] bg-text-primary transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-5 h-[2px] bg-text-primary transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
+          <span className={`block w-5 h-[1.5px] rounded-full bg-text-primary transition-all duration-300 origin-center ${menuOpen ? 'rotate-45 translate-y-[7.5px]' : ''}`} />
+          <span className={`block w-5 h-[1.5px] rounded-full bg-text-primary transition-all duration-300 ${menuOpen ? 'opacity-0 scale-0' : ''}`} />
+          <span className={`block w-5 h-[1.5px] rounded-full bg-text-primary transition-all duration-300 origin-center ${menuOpen ? '-rotate-45 -translate-y-[7.5px]' : ''}`} />
         </button>
       </div>
 
