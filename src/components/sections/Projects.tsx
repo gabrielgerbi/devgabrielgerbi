@@ -1,119 +1,36 @@
-'use client'
-
-import { useI18n } from '@/lib/i18n'
-import { SectionLabel } from '@/components/ui/SectionLabel'
-import { Reveal } from '@/components/ui/Reveal'
-
-const projectIcons = [
-  <svg key="1" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22c55e" strokeWidth="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="8" y="14" width="8" height="7" rx="1"/></svg>,
-  <svg key="2" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22c55e" strokeWidth="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="m10 9 5 3-5 3V9z"/><path d="M2 21h20"/></svg>,
-  <svg key="3" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22c55e" strokeWidth="1.8"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg>,
-  <svg key="4" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22c55e" strokeWidth="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>,
-]
-
-const projectTags = [
-  ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL'],
-  ['Next.js', 'Tailwind', 'Framer Motion'],
-  ['React Native', 'TypeScript', 'API REST'],
-  ['HTML/CSS', 'JavaScript', 'Design'],
-]
-
-const projectUrls: string[] = [
-  'https://app.discovery.com.br',
-  'https://discovery.com.br',
-  '',
-  'https://circuitopaixaodecristo.com.br',
-]
-
-function ProjectCard({ title, desc, iconIdx, tagsIdx, url }: {
-  title: string
-  desc: string
-  iconIdx: number
-  tagsIdx: number
-  url: string
-}) {
-  const hasLink = url.length > 0
-
-  const inner = (
-    <div className="group bg-bg-card/50 border border-accent-green/[0.06] rounded-2xl p-8 transition-all hover:border-accent-green/15 hover:bg-bg-card-hover/60 hover:-translate-y-1 backdrop-blur-sm flex flex-col h-full">
-      <div className="flex justify-between items-start mb-4">
-        <div className="w-11 h-11 rounded-xl bg-accent-green/[0.08] flex items-center justify-center">
-          {projectIcons[iconIdx]}
-        </div>
-        {hasLink ? (
-          <svg className="text-text-muted group-hover:text-accent-green group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-        ) : (
-          <span className="font-mono text-[10px] text-text-muted px-2 py-0.5 border border-white/[0.06] rounded-full">em breve</span>
-        )}
-      </div>
-      <h3 className="font-display text-xl font-semibold tracking-[-0.01em] mb-2">{title}</h3>
-      <p className="text-text-secondary text-sm leading-relaxed mb-5 flex-1">{desc}</p>
-      <div className="flex flex-wrap gap-1.5">
-        {projectTags[tagsIdx].map((tag) => (
-          <span key={tag} className="font-mono text-[11px] text-text-muted px-2.5 py-1 bg-accent-green/[0.04] rounded-md">{tag}</span>
-        ))}
-      </div>
-    </div>
-  )
-
-  if (hasLink) {
-    return (
-      <a href={url} target="_blank" rel="noopener noreferrer" className="no-underline block h-full">
-        {inner}
-      </a>
-    )
-  }
-
-  return inner
-}
+import { useTranslations } from "next-intl";
+import { projects } from "@/lib/projects";
+import { ProjectCard } from "@/components/sections/ProjectCard";
 
 export function Projects() {
-  const { t } = useI18n()
-
-  const projects = [
-    { title: t('projects.gestao.title'), desc: t('projects.gestao.desc'), icon: 0, tags: 0 },
-    { title: t('projects.landing.title'), desc: t('projects.landing.desc'), icon: 1, tags: 1 },
-    { title: t('projects.app.title'), desc: t('projects.app.desc'), icon: 2, tags: 2 },
-    { title: t('projects.teatro.title'), desc: t('projects.teatro.desc'), icon: 3, tags: 3 },
-  ]
+  const t = useTranslations("Projects");
 
   return (
-    <section id="projects" className="py-24 relative overflow-hidden border-t border-accent-green/[0.06]" style={{ background: 'linear-gradient(180deg, #050505, #060806, #050505)' }}>
-      {/* BG: Floating orbs */}
-      <div className="absolute -top-[10%] -right-[5%] w-[400px] h-[400px] rounded-full pointer-events-none opacity-50" style={{
-        background: 'radial-gradient(circle, rgba(34,197,94,0.07) 0%, transparent 70%)',
-        filter: 'blur(100px)',
-        animation: 'orb-float-1 25s ease-in-out infinite',
-      }} />
-      <div className="absolute -bottom-[5%] -left-[5%] w-[300px] h-[300px] rounded-full pointer-events-none opacity-50" style={{
-        background: 'radial-gradient(circle, rgba(34,197,94,0.05) 0%, transparent 70%)',
-        filter: 'blur(100px)',
-        animation: 'orb-float-2 30s ease-in-out infinite',
-      }} />
+    <section className="border-t border-[rgba(10,10,10,0.08)]" id="trabalhos">
+      <div className="mx-auto max-w-[1100px] px-6 md:px-12 py-24 md:py-32">
+        <div className="font-mono text-[11px] tracking-[0.24em] uppercase text-[#8a8a85] mb-14">
+          ↳ {t("sectionLabel")}
+        </div>
 
-      <div className="container max-w-[1200px] mx-auto px-6 relative z-[1]">
-        <SectionLabel>{t('projects.label')}</SectionLabel>
-        <Reveal>
-          <h2 className="font-display text-[clamp(32px,4vw,48px)] font-extrabold tracking-[-0.03em] leading-[1.1] mb-5">
-            {t('projects.title1')}<br />{t('projects.title2')}
+        <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-8 md:gap-16 mb-14">
+          <h2 className="font-display text-[clamp(36px,4.5vw,56px)] leading-[1.04] tracking-[-0.01em] font-normal [text-wrap:balance]">
+            {t("titleLine1")}
+            <br />
+            <em className="font-light italic text-[rgba(10,10,10,0.55)]">
+              {t("titleLine2")}
+            </em>
           </h2>
-        </Reveal>
-        <p className="text-text-secondary text-base leading-relaxed max-w-[560px] mb-12">{t('projects.desc')}</p>
+          <p className="text-[15px] leading-[1.75] text-[rgba(10,10,10,0.6)] max-w-[520px] font-light self-end">
+            {t("description")}
+          </p>
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-5">
-          {projects.map((p, i) => (
-            <Reveal key={i}>
-              <ProjectCard
-                title={p.title}
-                desc={p.desc}
-                iconIdx={p.icon}
-                tagsIdx={p.tags}
-                url={projectUrls[i]}
-              />
-            </Reveal>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {projects.map((p) => (
+            <ProjectCard key={p.key} project={p} />
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,0 +1,123 @@
+{
+  "Nav": {
+    "about": "sobre",
+    "work": "trabajos",
+    "contact": "contacto"
+  },
+  "Hero": {
+    "meta": "Full-stack developer · Amparo, Brasil",
+    "titleLine1": "Sistemas que ordenan",
+    "titleLine2": "el caos del día a día.",
+    "description": "Construyo software para negocios reales con Next.js, Prisma y PostgreSQL — sistemas internos, landings y apps. Del interior, hasta donde sea necesario."
+  },
+  "About": {
+    "sectionLabel": "Sobre",
+    "titleLine1": "Construyo sistemas hace tres años.",
+    "titleLine2": "Del interior de São Paulo.",
+    "photoTag": "GG · AMPARO, SP",
+    "p1": "Soy de <place>Amparo</place>, ciudad histórica del interior paulista. Mi trayectoria comenzó en 2022, en la secundaria integrada al técnico en Desarrollo de Sistemas, en la ETEC João Belarmino.",
+    "p2": "El primer año se centró en Diseño Digital — y fue lo que me abrió las puertas a la tecnología. Desde entonces vengo construyendo sistemas completos, landing pages y aplicaciones para clientes que necesitan soluciones web a medida.",
+    "p3": "Hoy, freelancer full-stack. Trabajo con stack moderno sin ser fanboy: elijo la herramienta correcta para el problema, no la más hypeada. Foco en claridad, código sostenible y productos que duran.",
+    "stats": {
+      "years": "años de tecnología",
+      "projects": "proyectos entregados",
+      "clients": "clientes activos",
+      "lines": "líneas de código"
+    }
+  },
+  "Timeline": {
+    "sectionLabel": "Trayectoria",
+    "titleLine1": "Del diseño",
+    "titleLine2": "al deploy.",
+    "currentlyTag": "Actualmente",
+    "items": {
+      "etec": {
+        "title": "ETEC João Belarmino",
+        "description": "Inicio de la secundaria integrada al técnico en Desarrollo de Sistemas (Centro Paula Souza)."
+      },
+      "designDigital": {
+        "title": "Diseño Digital",
+        "description": "Primer año enfocado en diseño — la puerta de entrada al mundo de la tecnología."
+      },
+      "firstProjects": {
+        "title": "Primeros proyectos",
+        "description": "Sistemas completos, landing pages y apps para clientes reales. Del concepto al deploy."
+      },
+      "freelancer": {
+        "title": "Freelancer full-stack",
+        "description": "Consolidación como desarrollador autónomo con proyectos de gestión y e-commerce."
+      },
+      "production": {
+        "title": "Sistemas en producción",
+        "description": "Trabajando en el Sistema Discovery, construyendo el Sistema Faculdade en paralelo, App Discovery en prototipado."
+      }
+    }
+  },
+  "Projects": {
+    "sectionLabel": "Trabajos seleccionados",
+    "titleLine1": "Del concepto",
+    "titleLine2": "a la producción.",
+    "description": "Proyectos que muestran mi enfoque: interfaces limpias, código sólido y foco en resolver problemas reales.",
+    "wipBadge": "EN PROGRESO",
+    "categories": {
+      "kanban": "KANBAN",
+      "web": "WEB",
+      "event": "EVENTO",
+      "mobile": "MÓVIL",
+      "academic": "ACADÉMICO"
+    },
+    "items": {
+      "sistemaDiscovery": {
+        "title": "Sistema Discovery",
+        "description": "Plataforma de gestión de procesos de ciudadanía europea. Kanban, árboles genealógicos, portal del cliente, financiero."
+      },
+      "discoverySite": {
+        "title": "Discovery Assessoria",
+        "description": "Sitio institucional con hero en video, blog integrado y foco en conversión."
+      },
+      "paixaoCristo": {
+        "title": "Paixão de Cristo",
+        "description": "Landing del espectáculo teatral, galería interactiva con lightbox y sección de patrocinio."
+      },
+      "appDiscovery": {
+        "title": "App Discovery",
+        "description": "Aplicación móvil en React Native — notificaciones, subida de documentos, chat y progreso en tiempo real."
+      },
+      "sistemaFaculdade": {
+        "title": "Sistema Faculdade",
+        "description": "Plataforma académica para gestión de matrículas, notas y calendario."
+      }
+    }
+  },
+  "Stack": {
+    "sectionLabel": "Stack",
+    "titleLine1": "Herramientas",
+    "titleLine2": "del día a día.",
+    "roles": {
+      "frontend": "Frontend",
+      "framework": "Framework",
+      "language": "Lenguaje",
+      "styling": "Estilizado",
+      "orm": "ORM",
+      "database": "Base de datos",
+      "deploy": "Deploy",
+      "versioning": "Versionado"
+    }
+  },
+  "Contact": {
+    "sectionLabel": "Contacto",
+    "titleLine1": "¿Tienes un proyecto en mente?",
+    "titleLine2": "Hablemos.",
+    "labels": {
+      "email": "EMAIL",
+      "whatsapp": "WHATSAPP",
+      "instagram": "INSTAGRAM",
+      "linkedin": "LINKEDIN",
+      "github": "GITHUB"
+    }
+  },
+  "Footer": {
+    "copyright": "© 2026 — gerbi · amparo, sp · brasil",
+    "tagline": "del interior al mundo."
+  }
+}
