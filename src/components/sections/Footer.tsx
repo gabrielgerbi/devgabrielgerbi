@@ -1,15 +1,19 @@
-import { useTranslations } from "next-intl";
-
 export function Footer() {
-  const t = useTranslations("Footer");
-
   return (
-    <footer className="bg-[#0a0a0a] text-[#f5f3ee] border-t border-[rgba(245,243,238,0.1)]">
-      <div className="mx-auto max-w-[1100px] px-6 md:px-12 py-8 flex flex-wrap justify-between items-center gap-4 font-mono text-[11px] tracking-[0.05em] text-[rgba(245,243,238,0.4)]">
-        <div>{t("copyright")}</div>
-        <div className="font-display italic font-light text-[15px] text-[rgba(245,243,238,0.55)] tracking-normal">
-          {t("tagline")}
+    <footer className="bg-[#0a0a0a] text-[#f5f3ee] border-t border-[rgba(245,243,238,0.08)]">
+      <div className="mx-auto max-w-[1100px] px-6 md:px-12 py-10 flex justify-between items-center">
+        <div className="font-display text-[14px] tracking-tight text-[rgba(245,243,238,0.45)]">
+          Gabriel Gerbi
+          <span className="mx-2 text-[rgba(245,243,238,0.25)]">·</span>
+          <span className="font-light italic">2026</span>
         </div>
+        <img
+          src="/logo-gg.png"
+          alt=""
+          width={56}
+          height={56}
+          className="object-contain"
+        />
       </div>
     </footer>
   );
