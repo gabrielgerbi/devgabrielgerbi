@@ -54,3 +54,9 @@ body {
   animation-duration: 700ms;
   animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
 }
+
+::view-transition-old(project-paixao-cristo),
+::view-transition-new(project-paixao-cristo) {
+  animation-duration: 700ms;
+  animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+}
