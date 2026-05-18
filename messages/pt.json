@@ -5,30 +5,30 @@
     "contact": "contato"
   },
   "Hero": {
-    "meta": "Full-stack developer · Amparo, SP",
+    "meta": "Full-stack developer · Asunción, Paraguai",
     "titleLine1": "Sistemas que organizam",
     "titleLine2": "o caos do dia a dia.",
-    "description": "Construo software pra negócios reais com Next.js, Prisma e PostgreSQL — sistemas internos, landings e apps. Do interior pra onde precisar."
+    "description": "Construo software pra negócios reais com Next.js, Prisma e PostgreSQL — sistemas internos, landings e apps."
   },
   "About": {
     "sectionLabel": "Sobre",
     "titleLine1": "Construo sistemas há três anos.",
-    "titleLine2": "Do interior de São Paulo.",
-    "photoTag": "GG · AMPARO, SP",
-    "p1": "Sou de <place>Amparo</place>, cidade histórica do interior paulista. Minha jornada começou em 2022, no ensino médio integrado ao técnico em Desenvolvimento de Sistemas, na ETEC João Belarmino.",
-    "p2": "O primeiro ano foi focado em Design Digital — e foi o que me abriu as portas pra tecnologia. Desde então venho construindo sistemas completos, landing pages e aplicativos pra clientes que precisam de solução web sob medida.",
-    "p3": "Hoje, freelancer full-stack. Trabalho com stack moderna sem ser fanboy: escolho a ferramenta certa pro problema, não a mais hypada. Foco em clareza, código sustentável e produtos que duram.",
+    "titleLine2": "De Amparo, São Paulo.",
+    "photoTag": "",
+    "p1": "Sou de <place>Amparo</place>, cidade histórica do interior paulista. Minha jornada começou em 2023, no ensino médio integrado ao técnico em Desenvolvimento de Sistemas, na ETEC João Belarmino.",
+    "p2": "Foi a aula de Design Digital que me abriu as portas pra tecnologia. Desde então venho construindo sistemas completos, landing pages e aplicativos pra clientes que precisam de solução web sob medida.",
+    "p3": "Hoje, freelancer full-stack. Trabalho com stack moderna, mas escolho a ferramenta certa pro problema — não a mais popular do momento. Moro em Asunción, no Paraguai: vim pra estudar medicina e encontrei um país incrível, com espaço pra crescer.",
     "stats": {
       "years": "anos de tecnologia",
       "projects": "projetos entregues",
-      "clients": "clientes ativos",
-      "lines": "linhas de código"
+      "languages": "linguagens utilizadas",
+      "production": "anos em produção"
     }
   },
   "Timeline": {
     "sectionLabel": "Trajetória",
-    "titleLine1": "Do design",
-    "titleLine2": "ao deploy.",
+    "titleLine1": "O caminho",
+    "titleLine2": "até aqui.",
     "currentlyTag": "Atualmente",
     "items": {
       "etec": {
@@ -37,19 +37,19 @@
       },
       "designDigital": {
         "title": "Design Digital",
-        "description": "Primeiro ano focado em design — a porta de entrada para o mundo da tecnologia."
+        "description": "No primeiro ano: Análise de Sistemas, Banco de Dados, Programação Web e Design Digital. Foi a última que abriu a porta para o primeiro trabalho na área."
       },
       "firstProjects": {
         "title": "Primeiros projetos",
-        "description": "Sistemas completos, landing pages e apps pra clientes reais. Do conceito ao deploy."
+        "description": "Sistemas completos, landing pages e apps em situações reais — colocando em prática o que estava estudando."
       },
       "freelancer": {
         "title": "Freelancer full-stack",
-        "description": "Consolidação como desenvolvedor autônomo com projetos de gestão e e-commerce."
+        "description": "Primeiros passos como desenvolvedor autônomo, com projetos de gestão e e-commerce. Conclusão do ensino técnico."
       },
       "production": {
         "title": "Sistemas em produção",
-        "description": "Trabalhando no Sistema Discovery, construindo o Sistema Faculdade em paralelo, App Discovery em prototipagem."
+        "description": "Trabalhando no Sistema Discovery, prototipando um aplicativo e criando novos projetos — acadêmicos e empresariais."
       }
     }
   },
@@ -57,7 +57,7 @@
     "sectionLabel": "Trabalhos selecionados",
     "titleLine1": "Do conceito",
     "titleLine2": "à produção.",
-    "description": "Projetos que mostram minha abordagem: interfaces limpas, código sólido e foco em resolver problemas reais.",
+    "description": "Projetos que mostram minha abordagem: interfaces planejadas, código estruturado e que solucionam problemas reais.",
     "wipBadge": "EM ANDAMENTO",
     "categories": {
       "kanban": "KANBAN",
@@ -84,8 +84,8 @@
         "description": "Aplicativo mobile em React Native — notificações, upload de documentos, chat e progresso em tempo real."
       },
       "sistemaFaculdade": {
-        "title": "Sistema Faculdade",
-        "description": "Plataforma acadêmica para gestão de matrículas, notas e calendário."
+        "title": "DelegaUMAX",
+        "description": "Calendário colaborativo para turmas de faculdade se organizarem em torno de prazos. Delegados cadastram aulas, provas e entregas; a sala inteira visualiza e filtra por tipo de evento."
       }
     }
   },
@@ -111,7 +111,8 @@
     "labels": {
       "email": "EMAIL",
       "whatsapp": "WHATSAPP",
-      "instagram": "INSTAGRAM",
+      "instagramMed": "INSTAGRAM · MED",
+      "instagramTech": "INSTAGRAM · TECH",
       "linkedin": "LINKEDIN",
       "github": "GITHUB"
     }
@@ -119,5 +120,46 @@
   "Footer": {
     "copyright": "© 2026 — gerbi · amparo, sp · brasil",
     "tagline": "do interior pro mundo."
+  },
+  "ProjectDetail": {
+    "common": {
+      "backToProjects": "Voltar pros trabalhos",
+      "client": "Cliente",
+      "role": "Papel",
+      "stack": "Stack",
+      "status": "Status"
+    },
+    "sistemaDiscovery": {
+      "pitch": "De WhatsApp e Excel a um painel unificado.",
+      "role": "Desenvolvimento full-stack",
+      "status": "Em produção · desenvolvimento ativo",
+      "intro1": "A Discovery Assessoria é uma consultoria especializada em dupla cidadania europeia, atendendo famílias que buscam reconhecimento italiano, espanhol, alemão ou português. Cada processo é uma teia: centenas de documentos, dezenas de pessoas mapeadas em árvores genealógicas, vencimentos, traduções juramentadas, e protocolos espalhados entre prefeituras, comarcas, igrejas e consulados na Europa.",
+      "intro2": "Antes do Sistema Discovery, essa teia era gerenciada num mosaico de ferramentas avulsas — grupos de WhatsApp pra conversar com clientes e equipe, pastas no iCloud, planilhas Excel, documentos físicos e digitais espalhados. Toda informação importante existia em algum lugar; nenhuma estava no mesmo lugar.",
+      "intro3": "O sistema nasceu pra reunir tudo numa só plataforma. Hoje é o ambiente de trabalho diário de Gabriel, Marco e da equipe da Discovery, além de terceiros que colaboram em casos específicos.",
+      "captionLogin": "A porta de entrada",
+      "chapter1Label": "A porta de entrada",
+      "chapter1Body1": "Tudo começa no login. A imagem de Cinque Terre não é decoração — é antecipação. A Discovery vende um sonho italiano, e o cliente entra nele antes de digitar o primeiro caractere.",
+      "chapter1Body2": "Pós-login, o dashboard. Visão de pássaro sobre famílias ativas, prazos críticos, mensagens pendentes. O ponto a partir do qual qualquer caminho dentro do sistema é possível.",
+      "chapter2Label": "O coração — o processo",
+      "chapter2Body1": "Cada família com pedido de cidadania vira um processo. O kanban é onde todos os processos vivem, organizados em colunas que representam o estágio em que cada um se encontra. É a tela mais usada do sistema — onde Gabriel, Marco e a equipe gastam a maior parte do tempo de trabalho.",
+      "chapter2Body2": "Cada processo se abre em camadas. Cards detalham requerentes, documentos, prazos. Atividades e sub-atividades fragmentam o trabalho em unidades menores — porque um processo de cidadania não é uma coisa, é centenas de coisas pequenas em sequência.",
+      "chapter2Body3": "A árvore genealógica vive dentro do processo. Não é módulo separado. Cada processo carrega sua própria árvore, mapeando o caminho de descendência até o ancestral europeu. Atribuir documentos a pessoas, conectar gerações, identificar a lacuna — tudo no contexto onde faz sentido.",
+      "chapter2Body4": "O financeiro também é parte do processo. Cada um tem suas receitas (parcelas do cliente), seus custos (taxas, traduções, despachantes europeus), e seu equilíbrio. Tudo em moeda original e equivalente em reais — porque o cliente vê o preço em real, mas a operação real acontece em euro.",
+      "calloutLabel": "Integração",
+      "chapter2Callout": "A API do Banco Central alimenta cotações BRL/EUR e BRL/USD em tempo real. Como o câmbio muda diariamente, não dá pra fechar uma fatura com cotação de ontem. Tooltips, relatórios e dashboards consomem direto da fonte.",
+      "chapter3Label": "Em volta do processo",
+      "chapter3Body1": "Alguns dados existem em escala maior que um único processo. A área de clientes mantém o cadastro central de cada pessoa atendida — múltiplos processos podem pertencer ao mesmo cliente, e o sistema sabe disso.",
+      "chapter3Body2": "Atividades e calendário operam na escala da equipe. Quem está fazendo o quê, em que dia, com que prioridade. Visão de lista quando se quer densidade, visão de calendário quando se quer ritmo.",
+      "chapter3Body3": "Mensagens internas substituem os grupos de WhatsApp paralelos. O assunto vive vinculado ao processo, ao cliente, ao documento — não numa thread perdida do celular.",
+      "chapter4Label": "Páginas dedicadas",
+      "chapter4Body1": "Algumas funcionalidades pedem palco próprio. A página de árvore genealógica, com pesquisa cruzada entre todas as árvores cadastradas. A página financeira global, com a Central de Inadimplência e visão consolidada de todas as operações em câmbio múltiplo. Configurações e gerenciamento de usuários fecham o conjunto.",
+      "numbersLabel": "Em números",
+      "numbersFamilies": "famílias ativas",
+      "numbersClients": "clientes cadastrados",
+      "numbersPeople": "pessoas em árvores genealógicas",
+      "numbersDocs": "documentos cadastrados",
+      "numbersTrees": "árvores genealógicas criadas",
+      "closing": "Um sistema desenhado pelo uso real, construído na convivência diária com quem usa. Não é software pronto adaptado pra um cliente — é a operação da Discovery descrita em código."
+    }
   }
 }

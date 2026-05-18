@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Cormorant_Garamond, Manrope, JetBrains_Mono } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
+import { ViewTransitions } from "next-view-transitions";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -55,6 +56,7 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
+    <ViewTransitions>
     <html
       lang={locale}
       className={`${cormorant.variable} ${manrope.variable} ${jetbrainsMono.variable}`}
@@ -63,5 +65,6 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
+    </ViewTransitions>
   );
 }

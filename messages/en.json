@@ -5,30 +5,30 @@
     "contact": "contact"
   },
   "Hero": {
-    "meta": "Full-stack developer · Amparo, Brazil",
+    "meta": "Full-stack developer · Asunción, Paraguay",
     "titleLine1": "Systems that bring order",
     "titleLine2": "to everyday chaos.",
-    "description": "I build software for real businesses with Next.js, Prisma and PostgreSQL — internal systems, landings and apps. From inland Brazil, wherever it's needed."
+    "description": "I build software for real businesses with Next.js, Prisma and PostgreSQL — internal systems, landings and apps."
   },
   "About": {
     "sectionLabel": "About",
     "titleLine1": "Building systems for three years.",
-    "titleLine2": "From inland Brazil.",
-    "photoTag": "GG · AMPARO, BRAZIL",
-    "p1": "I'm from <place>Amparo</place>, a historic town in inland São Paulo state. My journey began in 2022, in high school integrated with a technical course in Systems Development, at ETEC João Belarmino.",
-    "p2": "The first year focused on Digital Design — and that's what opened the doors to tech. Since then I've been building complete systems, landing pages and apps for clients who need custom web solutions.",
-    "p3": "Today, full-stack freelancer. I work with modern stack without being a fanboy: I pick the right tool for the problem, not the most hyped one. Focus on clarity, sustainable code, and products that last.",
+    "titleLine2": "From Amparo, Brazil.",
+    "photoTag": "",
+    "p1": "I'm from <place>Amparo</place>, a historic town in inland São Paulo state. My journey began in 2023, in high school integrated with a technical course in Systems Development, at ETEC João Belarmino.",
+    "p2": "It was the Digital Design class that opened the doors to tech for me. Since then I've been building complete systems, landing pages and apps for clients who need custom web solutions.",
+    "p3": "Today, full-stack freelancer. I work with modern stack, but I pick the right tool for the problem — not the trendiest one. I live in Asunción, Paraguay: came to study medicine and found an amazing country, with room to grow.",
     "stats": {
       "years": "years of tech",
       "projects": "projects delivered",
-      "clients": "active clients",
-      "lines": "lines of code"
+      "languages": "languages used",
+      "production": "years in production"
     }
   },
   "Timeline": {
     "sectionLabel": "Journey",
-    "titleLine1": "From design",
-    "titleLine2": "to deploy.",
+    "titleLine1": "The path",
+    "titleLine2": "so far.",
     "currentlyTag": "Currently",
     "items": {
       "etec": {
@@ -37,19 +37,19 @@
       },
       "designDigital": {
         "title": "Digital Design",
-        "description": "First year focused on design — the gateway to the world of tech."
+        "description": "In the first year: Systems Analysis, Databases, Web Programming, and Digital Design. The last one opened the door to my first job in tech."
       },
       "firstProjects": {
         "title": "First projects",
-        "description": "Complete systems, landing pages and apps for real clients. From concept to deploy."
+        "description": "Complete systems, landing pages and apps in real situations — putting into practice what I was studying."
       },
       "freelancer": {
         "title": "Full-stack freelancer",
-        "description": "Settling in as an independent developer with management and e-commerce projects."
+        "description": "First steps as an independent developer, with management systems and e-commerce projects. Completion of the technical degree."
       },
       "production": {
         "title": "Systems in production",
-        "description": "Working on Sistema Discovery, building Sistema Faculdade in parallel, App Discovery in prototyping."
+        "description": "Working on Sistema Discovery, prototyping a mobile app and building new projects — academic and corporate."
       }
     }
   },
@@ -57,7 +57,7 @@
     "sectionLabel": "Selected work",
     "titleLine1": "From concept",
     "titleLine2": "to production.",
-    "description": "Projects that show my approach: clean interfaces, solid code, and focus on solving real problems.",
+    "description": "Projects that show my approach: intentional interfaces, structured code, solving real problems.",
     "wipBadge": "IN PROGRESS",
     "categories": {
       "kanban": "KANBAN",
@@ -84,8 +84,8 @@
         "description": "Mobile app in React Native — notifications, document upload, chat, and real-time progress."
       },
       "sistemaFaculdade": {
-        "title": "Sistema Faculdade",
-        "description": "Academic platform for managing enrollments, grades, and calendar."
+        "title": "DelegaUMAX",
+        "description": "Collaborative calendar for college class groups to organize around deadlines. Delegates register classes, exams and deliveries; the whole class views and filters by event type."
       }
     }
   },
@@ -111,7 +111,8 @@
     "labels": {
       "email": "EMAIL",
       "whatsapp": "WHATSAPP",
-      "instagram": "INSTAGRAM",
+      "instagramMed": "INSTAGRAM · MED",
+      "instagramTech": "INSTAGRAM · TECH",
       "linkedin": "LINKEDIN",
       "github": "GITHUB"
     }
@@ -119,5 +120,46 @@
   "Footer": {
     "copyright": "© 2026 — gerbi · amparo, sp · brazil",
     "tagline": "from inland to the world."
+  },
+  "ProjectDetail": {
+    "common": {
+      "backToProjects": "Back to work",
+      "client": "Client",
+      "role": "Role",
+      "stack": "Stack",
+      "status": "Status"
+    },
+    "sistemaDiscovery": {
+      "pitch": "From WhatsApp and Excel to a unified dashboard.",
+      "role": "Full-stack development",
+      "status": "In production · active development",
+      "intro1": "Discovery Assessoria is a consultancy specialized in European dual citizenship, serving families seeking Italian, Spanish, German, or Portuguese recognition. Each case is a web: hundreds of documents, dozens of people mapped across family trees, deadlines, sworn translations, and filings spread between town halls, courts, churches, and consulates across Europe.",
+      "intro2": "Before the Discovery System, this web was managed across a mosaic of disconnected tools — WhatsApp groups for clients and staff, shared iCloud folders, Excel spreadsheets, physical and digital documents scattered everywhere. All important information existed somewhere; none of it was in the same place.",
+      "intro3": "The system was born to bring it all into one platform. Today it's the daily working environment of Gabriel, Marco, and Discovery's team, plus external contributors collaborating on specific cases.",
+      "captionLogin": "The gateway",
+      "chapter1Label": "The gateway",
+      "chapter1Body1": "Everything starts at login. The Cinque Terre image isn't decoration — it's anticipation. Discovery sells an Italian dream, and the client steps into it before typing a single character.",
+      "chapter1Body2": "After login, the dashboard. A bird's-eye view of active families, critical deadlines, pending messages. The point from which any path inside the system is possible.",
+      "chapter2Label": "The heart — the process",
+      "chapter2Body1": "Each family with a citizenship case becomes a process. The kanban is where all processes live, organized in columns representing the stage each one is at. It's the most-used screen in the system — where Gabriel, Marco, and the team spend most of their working time.",
+      "chapter2Body2": "Each process opens in layers. Cards detail applicants, documents, deadlines. Activities and sub-activities break the work into smaller units — because a citizenship case isn't one thing, it's hundreds of small things in sequence.",
+      "chapter2Body3": "The family tree lives within the process. Not as a separate module. Each process carries its own tree, mapping descent to the European ancestor. Linking documents to people, connecting generations, identifying the gap — all in the context where it makes sense.",
+      "chapter2Body4": "Finance is also part of the process. Each one has its revenue (client installments), its costs (fees, translations, European agents), and its balance. All in original currency and BRL equivalent — because the client sees the price in reais, but the real operation happens in euros.",
+      "calloutLabel": "Integration",
+      "chapter2Callout": "The Brazilian Central Bank API feeds real-time BRL/EUR and BRL/USD rates. Since exchange rates shift daily, you can't close an invoice with yesterday's quote. Tooltips, reports, and dashboards consume directly from the source.",
+      "chapter3Label": "Around the process",
+      "chapter3Body1": "Some data exists at a larger scale than a single process. The clients area maintains the central registry of every person served — multiple processes can belong to the same client, and the system knows it.",
+      "chapter3Body2": "Activities and calendar operate at the team scale. Who's doing what, on which day, with what priority. List view when you want density, calendar view when you want rhythm.",
+      "chapter3Body3": "Internal messaging replaces the parallel WhatsApp groups. The subject lives tied to the process, the client, the document — not in some thread lost on a phone.",
+      "chapter4Label": "Dedicated pages",
+      "chapter4Body1": "Some features call for their own stage. The genealogy page, with cross-search across all registered trees. The global financial page, with the Delinquency Center and a consolidated view of all operations across currencies. Settings and user management close the set.",
+      "numbersLabel": "By the numbers",
+      "numbersFamilies": "active families",
+      "numbersClients": "registered clients",
+      "numbersPeople": "people in family trees",
+      "numbersDocs": "registered documents",
+      "numbersTrees": "family trees created",
+      "closing": "A system designed by real use, built in daily proximity to those who use it. Not off-the-shelf software adapted to a client — it's Discovery's operation, described in code."
+    }
   }
 }

@@ -41,3 +41,16 @@ body {
 .reveal-1 { animation-delay: 0.05s; }
 .reveal-2 { animation-delay: 0.18s; }
 .reveal-3 { animation-delay: 0.34s; }
+
+/* Slow down view transitions for editorial feel */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+::view-transition-old(project-sistema-discovery),
+::view-transition-new(project-sistema-discovery) {
+  animation-duration: 700ms;
+  animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+}

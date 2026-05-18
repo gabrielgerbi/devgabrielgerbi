@@ -3,6 +3,7 @@ import { Photo } from "@/components/ui/Photo";
 
 export function About() {
   const t = useTranslations("About");
+  const photoTag = t("photoTag");
 
   return (
     <section className="bg-[#0a0a0a] text-[#f5f3ee]" id="sobre">
@@ -19,11 +20,13 @@ export function About() {
               alt="Gabriel Gerbi"
               className="w-full h-full object-cover grayscale contrast-110"
             />
-            <div className="absolute inset-0 flex flex-col justify-end p-6 pointer-events-none">
-              <div className="font-mono text-[10px] tracking-[0.24em] text-[rgba(245,243,238,0.4)]">
-                {t("photoTag")}
+            {photoTag && (
+              <div className="absolute inset-0 flex flex-col justify-end p-6 pointer-events-none">
+                <div className="font-mono text-[10px] tracking-[0.24em] text-[rgba(245,243,238,0.4)]">
+                  {photoTag}
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
           {/* texto */}
@@ -51,8 +54,8 @@ export function About() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-8 mt-16 pt-10 border-t border-[rgba(245,243,238,0.1)]">
               <Stat number="3+" label={t("stats.years")} />
               <Stat number="10+" label={t("stats.projects")} />
-              <Stat number="5+" label={t("stats.clients")} />
-              <Stat number="∞" label={t("stats.lines")} />
+              <Stat number="10+" label={t("stats.languages")} />
+              <Stat number="2+" label={t("stats.production")} />
             </div>
           </div>
         </div>

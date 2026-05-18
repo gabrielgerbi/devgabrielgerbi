@@ -26,11 +26,16 @@ export function Contact() {
           />
           <ContactLink
             label={t("labels.whatsapp")}
-            value="+55 (19) 99469-0076"
-            href="https://wa.me/5519994690076"
+            value="+595 983 401299"
+            href="https://wa.me/595983401299"
           />
           <ContactLink
-            label={t("labels.instagram")}
+            label={t("labels.instagramMed")}
+            value="@gabrielgerbi.med"
+            href="https://instagram.com/gabrielgerbi.med"
+          />
+          <ContactLink
+            label={t("labels.instagramTech")}
             value="@gerbitech"
             href="https://instagram.com/gerbitech"
           />
