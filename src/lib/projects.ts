@@ -65,11 +65,14 @@ export const projects: Project[] = [
     wip: true,
   },
   {
-    id: "sistemaFaculdade",
+    id: "delegaUmax",
+    slug: "delegaumax",                           // NOVO
     number: "05",
     year: "2026",
     category: "academic",
     bg: "light",
     wip: true,
+    cover: "/work/delegaumax/01-login.png",       // NOVO
+    viewTransitionName: "project-delegaumax",     // NOVO
   },
 ];

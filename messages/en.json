@@ -83,7 +83,7 @@
         "title": "App Discovery",
         "description": "Mobile app in React Native — notifications, document upload, chat, and real-time progress."
       },
-      "sistemaFaculdade": {
+      "delegaUmax": {
         "title": "DelegaUMAX",
         "description": "Collaborative calendar for college class groups to organize around deadlines. Delegates register classes, exams and deliveries; the whole class views and filters by event type."
       }
@@ -212,6 +212,34 @@
     "numbersPhotos": "curated photos in the gallery",
     "numbersRoutes": "regionalized routes",
     "closing": "A site doesn't sell an event — it sells a version of the region. The Passion of Christ had to stop being a one-off staging and become a regional project. That was the brief: document the proposal with enough detail for municipalities, sponsors, and press to see what didn't yet exist."
+   },
+   "delegaUmax": {
+    "pitch": "A calendar for classes that don't yet know how to organize themselves.",
+    "role": "Concept, design, and development",
+    "status": "In progress · 2026",
+    "intro1": "DelegaUMAX is a collaborative calendar for university classes. The class representatives — called \"delegates\" in Brazilian academic tradition — register lectures, exams, deliverables, and social events. The entire class views, filters by type, and receives notifications. A single source of truth in place of the WhatsApp group.",
+    "intro2": "The project was born from observing first-semester classes at UMAX. Freshmen who hadn't yet built a routine, professors who changed dates through the group chat, deliverables lost in the message flow. What was missing was a centralized document in which an exam deadline didn't depend on who scrolled the chat earlier.",
+    "intro3": "It's a personal project — not commissioned by UMAX. It went from observation to code with no client and no brief. The goal now is to finish and present it to the university as a proof of concept, with a pilot class running the system alongside the group chat.",
+    "captionCalendario": "Monthly calendar with events categorized by color — lectures, exams, deliverables, social",
+    "captionEvento": "Each event has start, end, class, creator, and description in a side panel",
+    "chapter1Label": "The observation",
+    "chapter1Body1": "The first semester is the most chaotic moment of any university class. Ninety people in a freshly created WhatsApp group. Academic calendar distributed across three different PDFs from the administration. Exam dates moving because the professor pushed them forward or back and only told someone in person. The question \"when is the exam again?\" repeated five times a day, always answered by the most attentive student — never by the coordination.",
+    "chapter1Body2": "The figure of the delegate exists precisely to mediate this. Elected by the class, they receive information from the coordination and relay it to their peers. But the delegate also misses messages, forgets to share things, takes weekends off. The problem is not the delegate — it's the channel. A WhatsApp group was not designed to hold structured data. DelegaUMAX is an attempt to give the delegate an interface that is.",
+    "chapter2Label": "The delegate as a hub",
+    "chapter2Body1": "The system is closed by design. There's no \"create account\" button on the home page — the login screen says \"contact an administrator\" for anyone without access. The delegate of each class receives credentials directly from the coordination or a Super Admin. This prevents the law school class from invading the medical school calendar, and keeps the system asking permission to grow rather than becoming Yet Another Calendar Tool.",
+    "chapter2Body2": "The sidebar reflects this hierarchy: Calendar for everyone, My Classes to list the groups the user belongs to, Pending for confirmations and notifications, Settings for profile, and Administration for those who register classes, recurring events, and users. Super Admin sees everything, delegate sees their class, student sees the calendar and the pending items.",
+    "chapter3Label": "The event as a unit",
+    "chapter3Body1": "Every piece of information in the system is an event. A lecture, exam, deliverable, meeting with coordination, social gathering — each with a start, end, class, creator, and optional description. Color-coded so the class can scan the month in three seconds: blue is regular lecture, orange is meeting, pink is social, red is exam. The chromatic rule holds for any class and any semester.",
+    "chapter3Body2": "Side panel instead of centered modal. Click the event, it opens on the right, stays visible while the calendar remains behind. Three views — month for planning the week, week for planning the day, day for the morning that matters. The panel fits any of them without breaking the layout. A small detail, but it's what separates a calendar from a colored spreadsheet.",
+    "chapter4Label": "The next step",
+    "chapter4Body1": "The project still needs finishing touches before being presented to UMAX. What's missing are tests with a real first-semester class, adjustments to event approval flows, and the usage report that will prove to the coordination that running it alongside the current channels is worth the effort. Not validating a feature — validating that the problem exists and that the class adopts the tool.",
+    "chapter4Body2": "Multi-language from the start — Brazilian Portuguese and Paraguayan Spanish — with border universities in mind, those that take students from both countries. UMAX is the first possible adopter, not the last. If the model works for one class, it scales to the course. If it scales to the course, it scales to the university. Structure holding firm before the growth.",
+    "numbersLabel": "By the numbers",
+    "numbersSemester": "semester as initial focus",
+    "numbersAreas": "functional areas in the system",
+    "numbersViews": "calendar views",
+    "numbersLangs": "supported languages",
+    "closing": "Solving chaos before it becomes institutional. The first semester is the window in which a student still believes a better system can exist. DelegaUMAX is the bet that it can."
    }
   }
 }

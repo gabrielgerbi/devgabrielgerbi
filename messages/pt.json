@@ -83,7 +83,7 @@
         "title": "App Discovery",
         "description": "Aplicativo mobile em React Native — notificações, upload de documentos, chat e progresso em tempo real."
       },
-      "sistemaFaculdade": {
+      "delegaUmax": {
         "title": "DelegaUMAX",
         "description": "Calendário colaborativo para turmas de faculdade se organizarem em torno de prazos. Delegados cadastram aulas, provas e entregas; a sala inteira visualiza e filtra por tipo de evento."
       }
@@ -212,6 +212,34 @@
     "numbersPhotos": "fotos curadas na galeria",
     "numbersRoutes": "rotas regionalizadas",
     "closing": "Um site não vende um evento — vende uma versão da região. A Paixão de Cristo precisava deixar de ser encenação avulsa e virar projeto regional. Esse foi o objetivo: documentar a proposta com detalhe suficiente pra que prefeituras, patrocinadores e imprensa enxergassem o que ainda não existia."
+   },
+   "delegaUmax": {
+    "pitch": "Um calendário para turmas que ainda não sabem se organizar.",
+    "role": "Concepção, design e desenvolvimento",
+    "status": "Em andamento · 2026",
+    "intro1": "DelegaUMAX é um calendário colaborativo para turmas de faculdade. Os delegados — representantes eleitos pela turma — cadastram aulas, provas, entregas e eventos sociais. A turma inteira visualiza, filtra por tipo e recebe notificações. Uma fonte única de verdade no lugar do grupo de WhatsApp.",
+    "intro2": "O projeto nasceu observando as turmas do primeiro semestre da UMAX. Calouros que ainda não tinham rotina, professores que mudavam datas pelo grupo, entregas perdidas no fluxo de mensagens. Faltava o documento centralizado em que prazo de prova não dependesse de quem rolou o chat mais cedo.",
+    "intro3": "É projeto pessoal — não foi vendido para a UMAX. Saiu da observação para o código sem cliente e sem briefing. A meta agora é terminar e apresentar à universidade como prova de conceito, com uma turma piloto rodando o sistema em paralelo ao grupo.",
+    "captionCalendario": "Calendário do mês com eventos categorizados por cor — aulas, provas, entregas, sociais",
+    "captionEvento": "Cada evento tem início, fim, turma, criador e descrição em painel lateral",
+    "chapter1Label": "A observação",
+    "chapter1Body1": "Primeiro semestre é o momento mais caótico de qualquer turma de faculdade. Noventa pessoas em um grupo de WhatsApp recém-criado. Calendário acadêmico distribuído em três PDFs diferentes da coordenação. Datas de prova mudando porque o professor adiantou ou atrasou e avisou só verbalmente. A pergunta \"quando é a prova mesmo?\" repetida cinco vezes por dia, sempre respondida pelo aluno mais atento — nunca pela coordenação.",
+    "chapter1Body2": "A figura do delegado existe justamente para mediar isso. Representante eleito pela turma, ele recebe a informação da coordenação e repassa para os colegas. Mas o delegado também perde mensagem, esquece de avisar, sai de fim de semana. O problema não é o delegado — é o canal. Grupo de WhatsApp não foi feito para guardar dado estruturado. DelegaUMAX é a tentativa de dar a ele uma interface adequada.",
+    "chapter2Label": "O delegado como hub",
+    "chapter2Body1": "O sistema é fechado por design. Não tem botão de \"criar conta\" na home — a tela de login diz \"contate um administrador\" para quem não tem acesso. O delegado de cada turma recebe credenciais pelas mãos da coordenação ou de um Super Admin. Isso evita que a turma de Direito invada o calendário de Medicina, e mantém o sistema pedindo licença para crescer em vez de virar Yet Another Calendar Tool.",
+    "chapter2Body2": "A sidebar reflete a hierarquia: Calendário para todos, Minhas Turmas para listar as turmas em que o usuário está, Pendentes para confirmações e notificações, Configurações para perfil e Administração para quem cadastra turmas, eventos recorrentes e usuários. Super Admin vê tudo, delegado vê a turma dele, aluno vê o calendário e os pendentes.",
+    "chapter3Label": "O evento como unidade",
+    "chapter3Body1": "Toda informação no sistema é um evento. Aula, prova, entrega, reunião com coordenação, confraternização — cada um com início, fim, turma, criador e descrição opcional. Categorizado por cor para a turma escanear o mês em três segundos: azul é aula regular, laranja é reunião, rosa é evento social, vermelho é prova. A regra cromática vale para qualquer turma e qualquer semestre.",
+    "chapter3Body2": "Painel lateral em vez de modal centralizado. Clica no evento, abre à direita, fica visível enquanto o calendário continua atrás. Três vistas — mês para planejar a semana, semana para planejar o dia, dia para a manhã que importa. O painel cabe em qualquer uma sem quebrar o layout. Detalhe pequeno, mas é o que separa calendário de planilha colorida.",
+    "chapter4Label": "O próximo passo",
+    "chapter4Body1": "O projeto ainda precisa de finalização para apresentar à UMAX. Faltam testes com uma turma real do primeiro semestre, ajustes nos fluxos de aprovação de eventos, e o relatório de uso que prove para a coordenação que vale rodar em paralelo com os meios atuais. Não é validar uma feature — é validar que o problema existe e que a turma adere.",
+    "chapter4Body2": "Multi-idioma desde o início — português brasileiro e espanhol paraguaio — pensando em universidades da fronteira que recebem alunos dos dois países. A UMAX é a primeira possível, não a última. Se o modelo funcionar em uma turma, escala para o curso. Se escala para o curso, escala para a faculdade. Estrutura aguentando antes do crescimento.",
+    "numbersLabel": "Em números",
+    "numbersSemester": "semestre como foco inicial",
+    "numbersAreas": "áreas funcionais do sistema",
+    "numbersViews": "vistas de calendário",
+    "numbersLangs": "idiomas suportados",
+    "closing": "Resolver caos antes que ele vire instituição. O primeiro semestre é a janela em que o aluno ainda acredita que existe um sistema melhor. DelegaUMAX é a aposta de que existe."
    }
   }
 }

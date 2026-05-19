@@ -83,7 +83,7 @@
         "title": "App Discovery",
         "description": "Aplicación móvil en React Native — notificaciones, subida de documentos, chat y progreso en tiempo real."
       },
-      "sistemaFaculdade": {
+      "delegaUmax": {
         "title": "DelegaUMAX",
         "description": "Calendario colaborativo para grupos universitarios organizarse en torno a plazos. Delegados registran clases, exámenes y entregas; toda la clase visualiza y filtra por tipo de evento."
       }
@@ -212,6 +212,34 @@
     "numbersPhotos": "fotos curadas en la galería",
     "numbersRoutes": "rutas regionalizadas",
     "closing": "Un sitio no vende un evento — vende una versión de la región. La Pasión de Cristo necesitaba dejar de ser una puesta en escena aislada y volverse proyecto regional. Ese fue el objetivo: documentar la propuesta con detalle suficiente para que alcaldías, patrocinadores y prensa vieran lo que aún no existía."
+   },
+   "delegaUmax": {
+    "pitch": "Un calendario para clases que todavía no saben organizarse.",
+    "role": "Concepción, diseño y desarrollo",
+    "status": "En curso · 2026",
+    "intro1": "DelegaUMAX es un calendario colaborativo para clases universitarias. Los delegados — representantes elegidos por la clase — registran clases, pruebas, entregas y eventos sociales. Toda la clase visualiza, filtra por tipo y recibe notificaciones. Una única fuente de verdad en lugar del grupo de WhatsApp.",
+    "intro2": "El proyecto nació observando las clases del primer semestre de UMAX. Estudiantes recién ingresados que todavía no tenían rutina, profesores que cambiaban fechas por el grupo, entregas perdidas en el flujo de mensajes. Faltaba el documento centralizado en el que el plazo de una prueba no dependiera de quién revisó el chat más temprano.",
+    "intro3": "Es proyecto personal — no fue vendido a UMAX. Pasó de la observación al código sin cliente y sin brief. La meta ahora es terminar y presentarlo a la universidad como prueba de concepto, con una clase piloto usando el sistema en paralelo al grupo.",
+    "captionCalendario": "Calendario del mes con eventos categorizados por color — clases, pruebas, entregas, sociales",
+    "captionEvento": "Cada evento tiene inicio, fin, clase, creador y descripción en panel lateral",
+    "chapter1Label": "La observación",
+    "chapter1Body1": "El primer semestre es el momento más caótico de cualquier clase universitaria. Noventa personas en un grupo de WhatsApp recién creado. Calendario académico distribuido en tres PDFs distintos de la coordinación. Fechas de prueba cambiando porque el profesor adelantó o atrasó y avisó solo verbalmente. La pregunta \"¿cuándo es la prueba?\" repetida cinco veces por día, siempre respondida por el alumno más atento — nunca por la coordinación.",
+    "chapter1Body2": "La figura del delegado existe justamente para mediar esto. Representante elegido por la clase, recibe la información de la coordinación y la transmite a sus colegas. Pero el delegado también pierde mensajes, olvida avisar, sale el fin de semana. El problema no es el delegado — es el canal. Un grupo de WhatsApp no fue hecho para guardar dato estructurado. DelegaUMAX es el intento de darle una interfaz adecuada.",
+    "chapter2Label": "El delegado como hub",
+    "chapter2Body1": "El sistema es cerrado por diseño. No hay botón de \"crear cuenta\" en la home — la pantalla de login dice \"contacte un administrador\" para quien no tenga acceso. El delegado de cada clase recibe credenciales por la coordinación o por un Super Admin. Eso evita que la clase de Derecho invada el calendario de Medicina, y mantiene al sistema pidiendo permiso para crecer en lugar de volverse Yet Another Calendar Tool.",
+    "chapter2Body2": "La sidebar refleja la jerarquía: Calendario para todos, Mis Clases para listar las clases en las que el usuario está, Pendientes para confirmaciones y notificaciones, Configuraciones para perfil y Administración para quien registra clases, eventos recurrentes y usuarios. Super Admin ve todo, delegado ve su clase, alumno ve el calendario y los pendientes.",
+    "chapter3Label": "El evento como unidad",
+    "chapter3Body1": "Toda información en el sistema es un evento. Clase, prueba, entrega, reunión con coordinación, confraternización — cada uno con inicio, fin, clase, creador y descripción opcional. Categorizado por color para que la clase escanee el mes en tres segundos: azul es clase regular, naranja es reunión, rosa es evento social, rojo es prueba. La regla cromática vale para cualquier clase y cualquier semestre.",
+    "chapter3Body2": "Panel lateral en lugar de modal centralizado. Hace clic en el evento, abre a la derecha, queda visible mientras el calendario sigue atrás. Tres vistas — mes para planear la semana, semana para planear el día, día para la mañana que importa. El panel cabe en cualquiera sin romper el layout. Detalle pequeño, pero es lo que separa un calendario de una planilla coloreada.",
+    "chapter4Label": "El próximo paso",
+    "chapter4Body1": "El proyecto todavía necesita finalización para presentarse a UMAX. Faltan pruebas con una clase real del primer semestre, ajustes en los flujos de aprobación de eventos, y el reporte de uso que demuestre a la coordinación que vale rodarlo en paralelo a los medios actuales. No es validar una feature — es validar que el problema existe y que la clase adhiere.",
+    "chapter4Body2": "Multi-idioma desde el inicio — portugués brasileño y español paraguayo — pensando en universidades de la frontera que reciben alumnos de los dos países. UMAX es la primera posible, no la última. Si el modelo funciona en una clase, escala al curso. Si escala al curso, escala a la facultad. Estructura aguantando antes del crecimiento.",
+    "numbersLabel": "En números",
+    "numbersSemester": "semestre como foco inicial",
+    "numbersAreas": "áreas funcionales del sistema",
+    "numbersViews": "vistas de calendario",
+    "numbersLangs": "idiomas soportados",
+    "closing": "Resolver el caos antes de que se vuelva institucional. El primer semestre es la ventana en la que el alumno todavía cree que existe un sistema mejor. DelegaUMAX es la apuesta de que existe."
    }
   }
 }

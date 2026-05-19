@@ -41,6 +41,10 @@ export default async function ProjectDetailPage({
     return <PaixaoCristo />;
   }
 
+  if (project.id === "delegaUmax") {
+    return <DelegaUmax />;
+  }
+
   notFound();
 }
 
@@ -671,6 +675,169 @@ function PaixaoCristo() {
           </Link>
           <div className="font-mono text-[10px] tracking-[0.24em] uppercase text-[rgba(10,10,10,0.4)]">
             03 / 05
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+// ============================================================
+// DELEGAUMAX
+// Insira esta função em src/app/[locale]/work/[slug]/page.tsx
+// ANTES da seção "// HELPERS" (depois de PaixaoCristo,
+// antes de "function Meta(...)")
+//
+// E adicione no switch principal:
+//
+//   if (project.id === "delegaUmax") {
+//     return <DelegaUmax />;
+//   }
+// ============================================================
+
+function DelegaUmax() {
+  const t = useTranslations("ProjectDetail.delegaUmax");
+  const tCommon = useTranslations("ProjectDetail.common");
+  const locale = useLocale();
+  const localePrefix = locale === routing.defaultLocale ? "" : `/${locale}`;
+
+  const BASE = "/work/delegaumax";
+
+  return (
+    <main className="bg-[#f5f3ee] text-[#0a0a0a] min-h-screen">
+      {/* Back link */}
+      <div className="mx-auto max-w-[1100px] px-6 md:px-12 pt-10">
+        <Link
+          href={`${localePrefix}/#trabalhos`}
+          className="font-mono text-[11px] tracking-[0.18em] uppercase text-[#8a8a85] hover:text-[#0a0a0a] transition-colors inline-flex items-center gap-2"
+        >
+          ←&nbsp;&nbsp;{tCommon("backToProjects")}
+        </Link>
+      </div>
+
+      {/* Project label */}
+      <div className="mx-auto max-w-[1100px] px-6 md:px-12 pt-16 md:pt-24">
+        <div className="font-mono text-[11px] tracking-[0.24em] uppercase text-[#8a8a85]">
+          ↳ DelegaUMAX · 05
+        </div>
+      </div>
+
+      {/* Hero image */}
+      <div className="mx-auto max-w-[1100px] px-6 md:px-12 pt-8 md:pt-10">
+        <div className="aspect-[21/9] overflow-hidden rounded-[2px] shadow-[0_24px_50px_-20px_rgba(10,10,10,0.18)]">
+          <img
+            src={`${BASE}/01-login.png`}
+            alt="Tela de login do DelegaUMAX — logo branco sobre fundo vermelho carmesim"
+            style={{ viewTransitionName: "project-delegaumax" }}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      {/* Project header */}
+      <header className="mx-auto max-w-[1100px] px-6 md:px-12 pt-10 md:pt-14 pb-16 md:pb-24">
+        <h1 className="font-display text-[clamp(40px,6vw,80px)] leading-[1.02] tracking-[-0.01em] font-normal mb-16 [text-wrap:balance] max-w-[920px]">
+          {t("pitch")}
+        </h1>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 pt-10 border-t border-[rgba(10,10,10,0.1)]">
+          <Meta label={tCommon("client")} value="Projeto pessoal · UMAX" />
+          <Meta label={tCommon("role")} value={t("role")} />
+          <Meta
+            label={tCommon("stack")}
+            value="Next.js · Prisma · PostgreSQL · next-intl"
+          />
+          <Meta label={tCommon("status")} value={t("status")} />
+        </div>
+      </header>
+
+      {/* Intro — prose */}
+      <Chapter>
+        <p>{t("intro1")}</p>
+        <p>{t("intro2")}</p>
+        <p>{t("intro3")}</p>
+      </Chapter>
+
+      {/* ===== CHAPTER 1: A observação ===== */}
+      <Chapter label={t("chapter1Label")}>
+        <p>{t("chapter1Body1")}</p>
+      </Chapter>
+      <ImageBlock
+        src={`${BASE}/02-tela-principal.png`}
+        alt="Calendário do mês com eventos categorizados por cor"
+        caption={t("captionCalendario")}
+      />
+
+      <Chapter>
+        <p>{t("chapter1Body2")}</p>
+      </Chapter>
+
+      {/* ===== CHAPTER 2: O delegado ===== */}
+      <Chapter label={t("chapter2Label")}>
+        <p>{t("chapter2Body1")}</p>
+      </Chapter>
+      <ImageBlock
+        src={`${BASE}/04-sidebar-sistema.png`}
+        alt="Sidebar do sistema expandida mostrando Calendário, Minhas Turmas, Pendentes, Configurações e Administração"
+      />
+
+      <Chapter>
+        <p>{t("chapter2Body2")}</p>
+      </Chapter>
+
+      {/* ===== CHAPTER 3: O evento ===== */}
+      <Chapter label={t("chapter3Label")}>
+        <p>{t("chapter3Body1")}</p>
+      </Chapter>
+      <ImageBlock
+        src={`${BASE}/03-sidebar-data.png`}
+        alt="Painel lateral com detalhes do evento — início, fim, turma, criador e descrição"
+        caption={t("captionEvento")}
+      />
+
+      <Chapter>
+        <p>{t("chapter3Body2")}</p>
+      </Chapter>
+
+      {/* ===== CHAPTER 4: O próximo passo ===== */}
+      <Chapter label={t("chapter4Label")}>
+        <p>{t("chapter4Body1")}</p>
+        <p>{t("chapter4Body2")}</p>
+      </Chapter>
+
+      {/* ===== NUMBERS ===== */}
+      <section className="bg-[#0a0a0a] text-[#f5f3ee] mt-24">
+        <div className="mx-auto max-w-[1100px] px-6 md:px-12 py-24 md:py-32">
+          <div className="font-mono text-[11px] tracking-[0.24em] uppercase text-[rgba(245,243,238,0.5)] mb-16">
+            ↳ {t("numbersLabel")}
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-14">
+            <NumberStat value="1°" label={t("numbersSemester")} />
+            <NumberStat value="5" label={t("numbersAreas")} />
+            <NumberStat value="3" label={t("numbersViews")} />
+            <NumberStat value="2" label={t("numbersLangs")} />
+          </div>
+        </div>
+      </section>
+
+      {/* Closing */}
+      <section className="mx-auto max-w-[720px] px-6 md:px-12 py-24 md:py-32">
+        <p className="font-display text-[clamp(26px,3.8vw,42px)] leading-[1.18] tracking-[-0.005em] font-light italic text-[rgba(10,10,10,0.7)] [text-wrap:balance]">
+          {t("closing")}
+        </p>
+      </section>
+
+      {/* Footer nav */}
+      <section className="border-t border-[rgba(10,10,10,0.08)]">
+        <div className="mx-auto max-w-[1100px] px-6 md:px-12 py-12 flex justify-between items-center">
+          <Link
+            href={`${localePrefix}/#trabalhos`}
+            className="font-mono text-[11px] tracking-[0.18em] uppercase text-[#8a8a85] hover:text-[#0a0a0a] transition-colors"
+          >
+            ←&nbsp;&nbsp;{tCommon("backToProjects")}
+          </Link>
+          <div className="font-mono text-[10px] tracking-[0.24em] uppercase text-[rgba(10,10,10,0.4)]">
+            05 / 05
           </div>
         </div>
       </section>
